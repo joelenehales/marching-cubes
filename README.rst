@@ -79,7 +79,7 @@ Parameters
 :volume_max: | Maximum value of x, y, and z in the marching volume. For best results, this should match the value used to generate the triangle mesh.
 
 :colour: | Name of the object's base colour. Used as the diffuse component of the lighting model.
-        | *Options*: turquoise, fuschia
+        | *Options*: turquoise, lime, orange, purple, fuchsia
         |  If not specified, turquoise is used by default.
 
 
@@ -95,25 +95,16 @@ Examples
 ========
 
 Example PLY files that can be used to experiment with the program have been
-provided in the directory *MeshFiles*. The parameters used to generate each
+provided in the directory *Example-Files*. The parameters used to generate each
 triangle mesh are included as a comment in the file. The following images show
 each triangle mesh rendered. The code to generate and render each triangle mesh
 is included in the caption.
 
 
-.. image:: wavy-render.png
+.. image:: Screenshots/wavy-render.png
   :width: 500
-  :alt: Rendered example: wavy scalar field
+  :alt: Rendered example of the wavy scalar field
 
 | Texture mesh generated of the wavy scalar field. 
-|  Generated using: :code:`python marching_cubes.py MeshFiles/wavy-example.ply wavy 0 -5 5 0.05`
-|  Rendered using: :code:`python render.py MeshFiles/wavy-example.ply -5 5 turquoise`
-
-
-.. image:: hyperboloid-render.png
-  :width: 500
-  :alt: Rendered example: hyperboloid scalar field
-
-| Texture mesh generated of the hyperboloid scalar field.
-|  Generated using: :code:`python marching_cubes.py MeshFiles/hyperboloid-example.ply hyperboloid -1.5 -5 5 0.05`
-|  Rendered using: :code:`python render.py MeshFiles/hyperboloid-example.ply -5 5 fuchsia`
+|  Generated using: :code:`python marching_cubes.py Example-Files/wavy.ply wavy 0 -5 5 0.05`
+|  Rendered using: :code:`python render.py Example-Files/wavy.ply -5 5 turquoise`
